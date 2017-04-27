@@ -1,0 +1,12 @@
+<%= form_for(visitor) do |f| %>
+
+  <%= f.label :name %>:
+  <%= f.text_field :name %>
+
+  <%= f.label :fav_color, "Your favorite color" %>:
+  <%= f.text_field :fav_color %>
+
+  <div class="actions" style="display:inline;">
+    <%= f.submit %>
+  </div>
+<% end %>

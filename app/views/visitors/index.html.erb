@@ -1,0 +1,13 @@
+<h1>Welcome, Tell us your favorite color.</h1>
+
+<%= render 'form', visitor: @visitor %>
+
+<br>
+
+<h2>Visitors</h2>
+
+<ul>
+  <% @visitors.each do |visitor| %>
+    <li><%= visitor.name%>'s favorite color is <%= visitor.fav_color %>!</li>
+  <% end %>
+</ul>
